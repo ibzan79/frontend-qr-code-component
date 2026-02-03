@@ -1,3 +1,4 @@
+/* Variables */
 :root {
     --bg-color: hsl(212, 45%, 89%);
     --main-text-color: hsl(218, 44%, 22%);
@@ -8,25 +9,27 @@
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--bg-color); 
     font-family: var(--main-font);
 }
 
+/* Main */
+
 main {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 100vh; /* El main ocupará 100% de la altura de la ventana del navegador */
+    display: flex; /* Habilita flexbox para centrar el contenido */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
 }
 
 .qr-code-component {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
+    display: flex; /* Habilita flexbox para organizar los elementos dentro del contenedor */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    max-width: 300px; /* Ancho máximo del contenedor, el alto se ajusta automáticamente */
     
     background-color: white;
-    border-radius: 15px;
-    text-align: center;
+    border-radius: 15px; /* Bordes redondeados para el contenedor */
+    text-align: center; /* Centra el texto dentro del contenedor */
     padding: 15px; /* Esto permite dar espacio entre el contenedor y los elementos */
 }
 
@@ -36,7 +39,7 @@ main {
 }
 
 .qr-text {
-    padding: 10px 20px; /* Se necesita más espacio entre el texto y  */
+    padding: 10px 20px; /* Se necesita más espacio entre el texto y la imagen */
 }
 
 .qr-text h1 {
@@ -56,7 +59,7 @@ main {
 footer {
     font-size: 11px;
     text-align: center;
-    width: 100%;
+    width: 100%; /* Ocupa el 100% del ancho de su contenedor, en este caso el Body porque está solo dentro del Body */
 }
 
 footer a {
