@@ -6,6 +6,7 @@
     --main-font: 'Outfit', sans-serif;
     --main-font-weight: 700;
     --secondary-font-weight: 400;
+    --footer-links-color: hsl(228, 45%, 44%);
 }
 
 body {
@@ -25,7 +26,7 @@ main {
 .qr-code-component {
     display: flex; /* Habilita flexbox para organizar los elementos dentro del contenedor */
     flex-direction: column; /* Organiza los elementos en una columna */
-    max-width: 300px; /* Ancho máximo del contenedor, el alto se ajusta automáticamente */
+    max-width: 18.75rem; /* Ancho máximo del contenedor, el alto se ajusta automáticamente. 300px / 16 */
     
     background-color: white;
     border-radius: 15px; /* Bordes redondeados para el contenedor */
@@ -63,5 +64,5 @@ footer {
 }
 
 footer a {
-    color: hsl(228, 45%, 44%);
+    color: var(--footer-links-color);
 }
