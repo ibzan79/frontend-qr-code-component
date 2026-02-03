@@ -1,0 +1,64 @@
+:root {
+    --bg-color: hsl(212, 45%, 89%);
+    --main-text-color: hsl(218, 44%, 22%);
+    --secondary-text-color: hsl(216, 15%, 48%);
+    --main-font: 'Outfit', sans-serif;
+    --main-font-weight: 700;
+    --secondary-font-weight: 400;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--main-font);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-code-component {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    padding: 15px; /* Esto permite dar espacio entre el contenedor y los elementos */
+}
+
+.qr-code-component img {
+    width: 100%; /* La imagen toma el 100% del ancho del contenedor article */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+.qr-text {
+    padding: 10px 20px; /* Se necesita más espacio entre el texto y  */
+}
+
+.qr-text h1 {
+    color: var(--main-text-color);
+    font-size: 20px;
+    font-weight: var(--main-font-weight);
+}
+
+.qr-text p {
+    color: var(--secondary-text-color);
+    font-size: 15px;
+    font-weight: var(--secondary-font-weight);
+}
+
+/* Footer */
+
+footer {
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
